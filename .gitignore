@@ -11,3 +11,6 @@ __pycache__/
 .vscode/
 .editorconfig
 *.code-workspace
+
+# arquivos de teste
+media/
