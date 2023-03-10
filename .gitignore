@@ -1,0 +1,13 @@
+
+# Arquivos Python
+venv/
+__pycache__/
+*.pyc
+
+# Ignora arquivos de log
+*.log
+
+# Ignora arquivos gerados pelo editor
+.vscode/
+.editorconfig
+*.code-workspace
