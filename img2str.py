@@ -22,7 +22,7 @@ def extract_text(filename, language, dest_language):
     imagem = cv2.imread(filename)
 
     # passo 2: pedir pro tessaract extrair o texto da imagem
-    texto = pytesseract.image_to_string(imagem, config='--psm 4', lang=language)
+    texto = pytesseract.image_to_string(imagem, language)
 
     tb = TextBlob(texto)
     translated = tb.translate(from_lang=lang_map[language], to=lang_map[dest_language])
@@ -35,7 +35,7 @@ def extract_text(filename, language, dest_language):
 
     print(f"TRANSLATED ({dest_language.upper()})")
     print("=" * 20)
-    print(f"Translated: {translated}")
+    print(translated)
 
 
 if __name__ == "__main__":
